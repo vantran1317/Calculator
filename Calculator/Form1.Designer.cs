@@ -37,6 +37,7 @@ namespace Calculator
             this.txtSoB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKQ = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -83,7 +84,6 @@ namespace Calculator
             this.label3.Size = new System.Drawing.Size(53, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Số b:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtSoB
             // 
@@ -108,11 +108,23 @@ namespace Calculator
             this.txtKQ.Size = new System.Drawing.Size(221, 32);
             this.txtKQ.TabIndex = 1;
             // 
+            // btTru
+            // 
+            this.btTru.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTru.Location = new System.Drawing.Point(259, 247);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(66, 38);
+            this.btTru.TabIndex = 2;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 430);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.txtSoB);
@@ -141,6 +153,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox txtSoB;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtKQ;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
