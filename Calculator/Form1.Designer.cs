@@ -64,6 +64,7 @@ namespace Calculator
             this.btCong.TabIndex = 2;
             this.btCong.Text = "+";
             this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // label2
             // 
@@ -99,7 +100,6 @@ namespace Calculator
             this.label4.Size = new System.Drawing.Size(81, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "Kết quả:";
-            this.label4.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtKQ
             // 
@@ -123,7 +123,7 @@ namespace Calculator
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Blue;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
